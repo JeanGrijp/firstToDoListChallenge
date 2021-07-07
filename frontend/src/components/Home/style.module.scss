@@ -1,135 +1,139 @@
 @import '../../styles/root.scss';
 @import '../../styles/variaveis.scss';
+@import './styleMediaMais480.module.scss';
 
-
-div.container {
-  color: $white;
-  background-color: $grey;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.containerSon {
-  // border: 1px solid rgb(9, 255, 0);
-  width: 85%;
-  height: 85%;
-  background-color: $black4;
-  border-radius: 16px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .logoImg {
-    // border: 1px solid rgb(0, 38, 255);
-    width: 85%;
-    height: 20%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  
-    h2 {
-      font-size: 3.2rem;
-    }
-  
-    img {
-      width: 20%;
-    }
-  }
-
-  .containerLogin {
-    // border: 1px solid red;
-    height: 70%;
+@media screen and (max-width: 800px) {
+  div.container {
+    color: $white;
+    background-color: $grey;
+    height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .containerSon {
+    // border: 1px solid rgb(9, 255, 0);
+    width: 85%;
+    height: 85%;
+    background-color: $black4;
+    border-radius: 16px;
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    
-    @mixin boxInputs {
-      // border: 1px solid rgb(255, 251, 0);
+  
+    .logoImg {
+      // border: 1px solid rgb(0, 38, 255);
       width: 85%;
-      height: 25%;
-      // position: relative;
+      height: 20%;
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       align-items: flex-start;
-      justify-content: space-around;
+    
+      h2 {
+        font-size: 3.2rem;
+      }
+    
+      img {
+        width: 25%;
+      }
     }
   
-    @mixin labelStyle {
-      // position: absolute;
-      // left: 0;
-      // top: 5%;
-      font-size: 1.4rem;
-      // margin-bottom: 1rem;
-    }
-  
-    @mixin inputStyle {
-      outline: none;
+    .containerLogin {
+      // border: 1px solid red;
+      height: 60%;
       width: 100%;
-      height: 40%;
-      border: 0;
-      border-radius: 6px;
-      background-color: $grey;
-    }
-  
-    .emailArea {
-      @include boxInputs;
+      position: relative;
       display: flex;
       flex-direction: column;
-      // align-items: center;
-      justify-content: space-around;
-  
-      label {
-        @include labelStyle
-      }
-  
-      input {
-        @include inputStyle;
-      }
-    }
-  
-    .passwordArea {
-      @include boxInputs;
-      display: flex;
-      flex-direction: column;
-      // align-items: center;
-      justify-content: space-around;
-  
-      label {
-        @include labelStyle;
-      }
-  
-      input {
-        @include inputStyle;
-      }
-    }
-
-    .inputSumbit {
-      @include boxInputs;
-      display: flex;
-      // flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-    }
-
-    input[type='submit'] {
-      @include inputStyle;
-
-      background: $gradient;
+      justify-content: space-around;
+      
+      @mixin boxInputs {
+        // border: 1px solid rgb(255, 251, 0);
+        width: 85%;
+        height: 30%;
+        // position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+      }
+    
+      @mixin labelStyle {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+    
+      @mixin inputStyle {
+        outline: none;
+        width: 100%;
+        height: 40%;
+        border: 0;
+        border-radius: 6px;
+        background-color: $grey;
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: $white;
+      }
+    
+      .emailArea {
+        @include boxInputs;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: space-around;
+    
+        label {
+          @include labelStyle
+        }
+    
+        input {
+          @include inputStyle;
+        }
+      }
+    
+      .passwordArea {
+        @include boxInputs;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: space-around;
+    
+        label {
+          @include labelStyle;
+        }
+    
+        input {
+          @include inputStyle;
+        }
+      }
+  
+      .inputSumbit {
+        @include boxInputs;
+        display: flex;
+        // flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+  
+      input[type='submit'] {
+        @include inputStyle;
+        font-size: 1rem;
+        font-weight: 600;
+        color: black;
+        background: $gradient;
+      } 
+  
     } 
-
-  } 
-
+  
+  }
+  
 }
-
 
 
 

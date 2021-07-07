@@ -1,14 +1,10 @@
 import styles from './style.module.scss';
 import logoDescktop from '../../imagens/desktop_logo.svg'
-import  { Helmet }  from  "react-Helmet" ;
+
 
 export default function Home () {
   return (
     <>
-    <Helmet>
-      <meta charSet="utf-8"/>
-      <title>Login</title> 
-    </Helmet>
     <div className={styles.container}>
 
       <div className={styles.containerSon}>
