@@ -20,34 +20,60 @@
     height: 85%;
     background-color: $black4;
     border-radius: 16px;
-    position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-  
-    .logoImg {
-      // border: 1px solid rgb(0, 38, 255);
-      width: 85%;
-      height: 20%;
+    position: relative;
+
+    .logoImg{
+      // position: absolute;
+      left: 5%;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      align-items: flex-start;
-    
-      h2 {
-        font-size: 3.2rem;
-      }
-    
-      img {
-        width: 25%;
-      }
+      align-items: center;
+      width: 80%;
+      height: 75%;
+      // border: 1px solid rgb(255, 255, 255);
     }
   
+    .logo {
+      // border: 1px solid rgb(0, 38, 255);
+      width: 85%;
+      height: 35%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    
+      h2 {
+        font-size: 3rem;
+      }
+    
+
+    }
+    
+    .img {
+      position: absolute;
+      right: 5%;
+      top: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 50%;
+      height: 35%;
+      border: 1px solid rgb(36, 121, 116);
+      img {
+        width: 50%;
+        height: 100%;
+      }
+    }
+
     .containerLogin {
       // border: 1px solid red;
       height: 60%;
       width: 100%;
-      position: relative;
+      // position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
