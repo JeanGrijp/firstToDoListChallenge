@@ -1,165 +1,78 @@
 @import '../../styles/root.scss';
 @import '../../styles/variaveis.scss';
-@import './styleMediaMais480.module.scss';
+@import './experienceBar.module.scss';
+
 
 @media screen and (max-width: 800px) {
+  
   div.container {
     color: $white;
     background-color: $grey;
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  
-  .containerSon {
-    // border: 1px solid rgb(9, 255, 0);
-    width: 85%;
-    height: 85%;
-    background-color: $black4;
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     position: relative;
 
-    .logoImg{
-      // position: absolute;
-      left: 5%;
+    .containerSon {
+      // border: 1px solid rgb(9, 255, 0);
+      width: 85%;
+      height: 85%;
+      background-color: $black4;
+      border-radius: 16px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      width: 80%;
-      height: 75%;
-      // border: 1px solid rgb(255, 255, 255);
-    }
-  
-    .logo {
-      // border: 1px solid rgb(0, 38, 255);
-      width: 85%;
-      height: 35%;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    
-      h2 {
-        font-size: 3rem;
-      }
-    
-
-    }
-    
-    .img {
-      position: absolute;
-      right: 5%;
-      top: 10%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      width: 50%;
-      height: 35%;
-      // border: 1px solid rgb(36, 121, 116);
-      img {
-        width: 40%;
-        // height: 100%;
-      }
+      position: relative;
     }
 
-    .containerLogin {
-      // border: 1px solid red;
-      height: 60%;
-      width: 100%;
-      // position: relative;
+    div.upper {
+      border: 1px solid rgb(0, 174, 255);
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: space-around;
-      
-      @mixin boxInputs {
-        // border: 1px solid rgb(255, 251, 0);
-        width: 85%;
-        height: 30%;
-        // position: relative;
+      align-items: flex-start;
+      width: 95%;
+      height: 20%;
+
+      div.iconAndText {
+        border: 1px solid rgb(226, 224, 231);
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         justify-content: space-around;
-      }
-    
-      @mixin labelStyle {
-        font-size: 1.4rem;
-        font-weight: 600;
-      }
-    
-      @mixin inputStyle {
-        outline: none;
-        width: 100%;
-        height: 40%;
-        border: 0;
-        border-radius: 6px;
-        background-color: $grey;
-        font-size: 1.4rem;
-        font-weight: 800;
-        color: $white;
-      }
-    
-      .emailArea {
-        @include boxInputs;
-        display: flex;
-        flex-direction: column;
-        // align-items: center;
-        justify-content: space-around;
-    
-        label {
-          @include labelStyle
-        }
-    
-        input {
-          @include inputStyle;
-        }
-      }
-    
-      .passwordArea {
-        @include boxInputs;
-        display: flex;
-        flex-direction: column;
-        // align-items: center;
-        justify-content: space-around;
-    
-        label {
-          @include labelStyle;
-        }
-    
-        input {
-          @include inputStyle;
-        }
-      }
-  
-      .inputSumbit {
-        @include boxInputs;
-        display: flex;
-        // flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        width: 20%;
+        height: 20%;
+
+        img {
+          width: 50%;
+          height: 50%;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
       }
-  
-      input[type='submit'] {
-        @include inputStyle;
-        font-size: 1rem;
-        font-weight: 600;
-        color: black;
-        background: $gradient;
-      } 
-  
-    } 
-  
+
+    }
+
   }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-
-
 
